@@ -25,7 +25,7 @@ laraboot build --pack-params default-process=task
 cp -R ../src/vercel-files/. ./
 
 # Grab tar file from image
-image_id=$(docker run -id jetstream-demo)
+image_id=$(docker run -id model-demo)
 docker export "$image_id" >image-app.tar.gz
 mkdir jetstream-app && tar -xf image-app.tar.gz -C jetstream-app
 tree -L 1 jetstream-app

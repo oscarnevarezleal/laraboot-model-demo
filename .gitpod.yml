@@ -1,12 +1,12 @@
 # Commands to start on workspace startup
-workspaceLocation: laraboot-jetstream-demo/src
+workspaceLocation: laraboot-model-demo/src
 tasks:
   - name: Install cli
     openMode: tab-after
     init: npm i -g @laraboot-io/cli
     command: |
       readonly PHP_VERSION="8.0"
-      readonly PROJECT_NAME="jetstream-demo"
+      readonly PROJECT_NAME="model-demo"
       readonly PROJECT_HOME=$(pwd)
 
       # Enable network communication with Docker socket.
